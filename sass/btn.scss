@@ -1,0 +1,15 @@
+.btn {
+  border: none;
+  cursor: pointer;
+  background-color: $color-main;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $color-btn-hover;
+  }
+
+  &:disabled {
+    background-color: $color-btn-disabled;
+  }
+}
+

@@ -1,0 +1,171 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+    title конспект
+    meta(name='theme-color', content='#dcbef6')
+    link(href='styles/style.css', rel='stylesheet')
+    script.
+      // Picture element HTML5 shiv
+      document.createElement("picture")
+    script(src='scripts/picturefill.js', async='')
+  body
+    .container
+      include 0header.pug
+      main.page-main
+        h1.page-main__title рабочее окружение
+        section.items
+          article.item
+            h2.item__title vs code
+            article.item__wrap
+              h2.item__text-title
+              p.item__text
+                a.item__link(href='https://code.visualstudio.com/', target='_blank') скачать
+                h3.item__text-title список приложений:
+                ul.item__list
+                  li.item__list-item auto close tag
+                  li.item__list-item auto rename tag
+                  li.item__list-item editorconfig for vs code
+                  li.item__list-item file-icons
+                  li.item__list-item highlight-matching-tag
+                  li.item__list-item indent-rainbow
+                  li.item__list-item indenticator
+                  li.item__list-item matherial theme
+                  li.item__list-item rainbow brackets
+                  li.item__list-item sass
+                  li.item__list-item selectline-statusbar
+                  li.item__list-item colorize
+                  li.item__list-item csscomb
+            article.item__wrap
+              p.item__text
+                a.item__link(href='https://code.visualstudio.com/insiders/', target='_blank') insiders edition
+                h3.item__text-title для реакта
+                ul.item__list
+                  li.item__list-item simple react snippets
+                  li.item__list-item genuuid
+                  li.item__list-item import cost
+          article.item
+            h2.item__title node
+            article.item__wrap
+              h3.item__text-title переустановка node и npm
+              ol.item__list
+                li.item__list-item удалить node.js через установку и удаление программ
+                li.item__list-item
+                  a.item__link(href=' https://nodejs.org/en/ ', target='_blank') установить
+                  |  node.js (стабильную)
+                li.item__list-item переустановить npm <br>
+                  code npm install npm@latest -g
+              p.item__text версию можно проверить командой
+                code  node -v
+                <br>для npm —
+                code  npm -v
+            article.item__wrap
+              h3.item__text-title yarn (он быстрее)<br>
+              p.item__text
+                ol.item__list
+                  li.item__list-item
+                    a.item__link(href='https://chocolatey.org/install', target='_blank') установить
+                    |  chocolatey
+                  li.item__list-item
+                    code choco install yarn
+          article.item
+            h2.item__title расширения для браузера
+            article.item__wrap
+              h3.item__text-title
+              p.item__text
+                ul.item__list
+                  li.item__list-item
+                    a.item__link(href='https://chrome.google.com/webstore/detail/google-arts-culture/akimgimeeoiognljlfchpbkpfbmeapkh', target='_blank')  google arts & culture
+                  li.item__list-item
+                    a.item__link(href='https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi', target='_blank')  perfect pixel
+                  li.item__list-item
+                    a.item__link(href='https://chrome.google.com/webstore/detail/css-peeper/mbnbehikldjhnfehhnaidhjhoofhpehk', target='_blank') CSS Peeper
+          article.item
+            h2.item__title скриншоты
+            article.item__wrap
+              h3.item__text-title share X
+              p.item__text
+                a.item__link(href='https://getsharex.com', target='_blank') скачать
+            article.item__wrap
+              h3.item__text-title
+              p.item__text
+          article.item
+            h2.item__title консоль
+            article.item__wrap
+              h3.item__text-title гитбаш
+              p.item__text
+                a.item__link(href='https://git-scm.com/', target='_blank') скачать
+            article.item__wrap
+                h3.item__text-title cmder (full)
+                p.item__text
+                  a.item__link(href='http://cmder.net/', target='_blank') скачать
+          article.item
+            h2.item__title запись гифок
+            article.item__wrap
+              h3.item__text-title gifcam
+              p.item__text
+                a.item__link(href='https://gifcam.ru.uptodown.com/windows/download', target='_blank') скачать
+
+
+
+
+
+          //- article.item
+          //-   h2.item__title
+          //-   article.item__wrap
+          //-     h3.item__text-title
+          //-     p.item__text
+          //-   article.item__wrap
+          //-     h3.item__text-title
+          //-     p.item__text
+          //- ul.item__list
+          //-   li.item__list-item
+          //-   li.item__list-item
+                    //- article.item
+          //-   h2.item__title
+          //-   article.item__wrap
+          //-     h3.item__text-title
+          //-     p.item__text
+          //-   article.item__wrap
+          //-     h3.item__text-title
+          //-     p.item__text
+          //- ul.item__list
+          //-   li.item__list-item
+          //-   li.item__list-item
+                    //- article.item
+          //-   h2.item__title
+          //-   article.item__wrap
+          //-     h3.item__text-title
+          //-     p.item__text
+          //-   article.item__wrap
+          //-     h3.item__text-title
+          //-     p.item__text
+          //- ul.item__list
+          //-   li.item__list-item
+          //-   li.item__list-item
+                    //- article.item
+          //-   h2.item__title
+          //-   article.item__wrap
+          //-     h3.item__text-title
+          //-     p.item__text
+          //-   article.item__wrap
+          //-     h3.item__text-title
+          //-     p.item__text
+          //- ul.item__list
+          //-   li.item__list-item
+          //-   li.item__list-item
+                    //- article.item
+          //-   h2.item__title
+          //-   article.item__wrap
+          //-     h3.item__text-title
+          //-     p.item__text
+          //-   article.item__wrap
+          //-     h3.item__text-title
+          //-     p.item__text
+          //- ul.item__list
+          //-   li.item__list-item
+          //-   li.item__list-item
+
+      footer.page-footer
+    script(src='scripts/index.js')
